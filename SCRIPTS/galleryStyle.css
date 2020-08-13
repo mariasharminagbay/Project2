@@ -119,11 +119,80 @@ li a, .dropbtn {
 
 }
 
-.container{
-	max-width: 1100px;
-	margin:auto;}
-
 .text-primary{
 
 	color:#3693ff;
 }
+
+.galleryHeader {
+	text-align: center;
+	padding: 20px;
+  }
+
+  .rowMSA {
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-items: center;
+  }
+
+ /* display: flex;
+	flex-direction:column;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	position:absolute; */
+  
+  /* Create two equal columns that sits next to each other */
+  .columnMSA {
+	-ms-flex: 50%; /* IE 10 */
+	flex: 50%;
+	padding: 0 50px;	
+	align-items:center;
+	justify-content:center;
+	
+  }
+  
+  .columnMSA img {
+	margin-top: 8px;
+	vertical-align: middle;
+  }
+
+  .columnForam {
+	-ms-flex: 50%; /* IE 10 */
+	flex: 50%;
+	padding: 0 50px;	
+	align-items:center;
+	justify-content:center;
+	
+  }
+  
+  .columnForam img {
+	margin-top: 8px;
+	vertical-align: middle;
+  }
+
+  .btn:hover {
+	background-color: #ddd;
+  }
+  
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+  * {
+	box-sizing: border-box;
+  }
+
+  /*#rowForamID{
+	  display: none;
+  } */
+
+  #myDIV {
+	width: 500px;
+	height: 500px;
+	background-color: lightblue;
+  }

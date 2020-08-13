@@ -23,12 +23,54 @@
              </li>
         </ul>
     </nav>
-    <header id="showcase">
-        <div class="showcase-content">
-           <div class="container">		
-          </div>
+    <!-- Gallery Header -->
+    <div class="galleryHeader" id="mygalleryHeaser">
+        <h1>Hobbies</h1>
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20pt;">Click on the buttons to view.</p>
+        <button class="btn" id="btnForam" onclick="one()">Foram</button>
+        <button class="btn active"  id="btnMSA" onclick="two()">Maria</button>
+        <button class="btn" id="btnIshara" onclick ="four()" >Ishara</button>
+    </div>
+
+    <div class="rowMSA" id="rowMSAID">
+        <div class="columnMSA" id="rowMSAID">
+            <img src="/IMAGES/msagalleryBrocolli.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerychicken.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerySalmon.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryShrimp.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerySpag.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerylechonbelly.jpg" style="width: 650px;height: 500px;">
+
         </div>
-    </header>
+        <div class="columnMSA" id="rowMSAID">
+            <img src="/IMAGES/msagalleryturkey.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryTurkeySteak.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerykebab.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryNoodles.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerySalmon.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagallerySeafoodValenciana.jpg" style="width: 650px;height: 500px;">
+        </div>
+
+        
+    </div>
+
+    <div class="rowForam" id="rowForamID">
+        <div class="columnForam" id="rowForamID">
+            <img src="/IMAGES/msagalleryBook1.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryBook2.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryBook3.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryBook4.jpg" style="width: 650px;height: 500px;">
+            <img src="/IMAGES/msagalleryBook1.jpg" style="width: 650px;height: 500px;">
+            
+
+        </div>
+        <div class="columnForam" id="rowForamID">
+            <img src="/IMAGES/msagalleryBook5.jpg" style="width: 650px;height: 500px;">
+     
+        </div>
+
+        
+    </div>
 
     <footer>
         <div class="footer">
@@ -46,6 +88,86 @@
             </div>
         </div>
     </footer>
-    
+
+
+
+    <script>
+        window.onload = function() {
+            document.getElementById("btnMSA").click();
+        }
+        // Get the elements with class="column"
+        var elementsMSA = document.getElementsByClassName("columnMSA");
+        var elementsForam = document.getElementsByClassName("columnForam");
+        
+        // Declare a loop variable
+        var i;
+        
+        // Full-width images
+        function one() {
+            var y = document.getElementById('rowMSAID');
+            var x = document.getElementById("rowForamID");
+            x.style.display = 'flex';
+            y.style.display = 'none';
+            
+            for (i = 0; i < elementsForam.length; i++) {
+                elementsForam[i].style.msFlex = "100%";  // IE10
+                elementsForam[i].style.flex = "100%";
+          }
+        }
+        
+        // Two images side by side
+        function two() {
+            var y = document.getElementById('rowMSAID');
+            var x = document.getElementById("rowForamID");
+            y.style.display = 'flex';
+            x.style.display = 'none';
+            /*if (y.style.display === 'none'){
+                y.style.display = 'flex';
+            }
+            else {
+                y.style.display = 'none';
+            }*/
+
+          for (i = 0; i < elementsMSA.length; i++) {
+            elementsMSA[i].style.msFlex = "30%";  // IE10
+            elementsMSA[i].style.flex = "30%";
+          }
+        }
+
+        //
+        function myFunction() {
+            var x = document.getElementById('myDIV');
+                if (x.style.display === 'none') {
+                     x.style.display = 'flex';
+                } else {
+                x.style.display = 'none';
+                }
+        }
+
+        //
+        
+        // Four images side by side
+        function four() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+          }
+        }
+        
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("mygalleryHeaser");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+
+
+
+        </script>
+
 </body>
 </html>
