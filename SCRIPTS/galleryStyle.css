@@ -6,7 +6,8 @@ body{
 	font-family:Arial, sans-serif;
 	line-height: 1.4;
 	color: #333;
-	overflow-x: hidden;
+	overflow-x: auto;
+	margin: 0;
 }
 
 #navbar{
@@ -19,20 +20,17 @@ body{
 	top:0;
 	z-index:1;
 	border-bottom:3px solid #3693ff;
-
 }
 
 #navbar ul{
 	display:flex;
 	align-items:center;
 	list-style:none;
-
 }
 
 #navbar h2 a{
 	color:#fff;
 	text-decoration:none;
-
 }
 
 #navbar li a{
@@ -43,14 +41,12 @@ body{
 	margin:0 0.5rem;
 	border-radius:5px;
 	transition: background-color 0.3s;
-
 }
 
 #navbar li > li {
 	display:flex;
 	align-items:center;
 	list-style:none;
-
 }
 
 #navbar li a:hover
@@ -98,101 +94,84 @@ li a, .dropbtn {
 	background-color: red;
   }
 
-#showcase{
-	background:url('../IMAGES/Team-Building-Wallpaper.jpg') no-repeat center center/cover;
-	height:40vh;
-
-}
-
-.showcase-contents{
-	display: flex;
-	flex-direction:column;
-	text-align:center;
-	align-items:center;
-	justify-content:center;
-	position:absolute;
-	top:81px;
-	left:0;
-	bottom:0;
-	right:0;
-	background:rgba(0,0,0,0.6);
-
-}
-
 .text-primary{
-
 	color:#3693ff;
 }
 
 .galleryHeader {
 	text-align: center;
-	padding: 20px;
+	padding: 32px;
   }
 
-  .rowMSA {
+.rowMSA, .rowForam, .rowIshara {
 	display: -ms-flexbox; /* IE 10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE 10 */
 	flex-wrap: wrap;
 	padding: 0 4px;
-	justify-items: center;
+	align-items: center;  /* this will put all the items in the div of rowMSA all in the middle - horizontally */
+	justify-content: center;
+	position: relative;
+	margin: 0;
+	right: 0;
+	left: 0;
+  }
+  .clearfix {
+	overflow: auto;
   }
 
- /* display: flex;
-	flex-direction:column;
-	text-align:center;
-	align-items:center;
-	justify-content:center;
-	position:absolute; */
-  
-  /* Create two equal columns that sits next to each other */
-  .columnMSA {
-	-ms-flex: 50%; /* IE 10 */
-	flex: 50%;
+ /* Create two equal columns that sits next to each other */
+  .columnMSA, .columnForam, .columnIshara {
+	-ms-flex:25%; /* IE 10 */
+	flex: 25%;
 	padding: 0 50px;	
-	align-items:center;
-	justify-content:center;
 	
   }
   
-  .columnMSA img {
+  .columnMSA,.columnForam,.columnIshara img {
 	margin-top: 8px;
 	vertical-align: middle;
   }
 
-  .columnForam {
-	-ms-flex: 50%; /* IE 10 */
-	flex: 50%;
-	padding: 0 50px;	
-	align-items:center;
-	justify-content:center;
-	
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.columnMSA,.columnForam,.columnIshara {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
   }
   
-  .columnForam img {
-	margin-top: 8px;
-	vertical-align: middle;
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.columnMSA,.columnForam,.columnIshara {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
   }
 
-  .btn:hover {
-	background-color: #ddd;
+.btn:hover {
+	background-color: rgb(144, 154, 201);
   }
   
-  .btn.active {
-	background-color: #666;
+  .btn, .active {
+	background-color: rgb(66, 88, 211);
 	color: white;
+  }
+  
+  .btn {
+	border: none;
+	outline: none;
+	padding: 10px 16px;
+	cursor: pointer;
+	font-size: 18px;
+	background-color: rgb(66, 88, 211);
+	
   }
 
   * {
 	box-sizing: border-box;
   }
 
-  /*#rowForamID{
-	  display: none;
-  } */
-
-  #myDIV {
-	width: 500px;
-	height: 500px;
-	background-color: lightblue;
-  }
