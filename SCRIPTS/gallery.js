@@ -1,13 +1,17 @@
-
 window.onload = function() {
     document.getElementById("btnMSA").click();
+
 }
 // Get the elements with class="column"
-var elementsMSA = document.getElementsByClassName("columnMSA");
-var elementsForam = document.getElementsByClassName("columnForam");
-var elementsIshara = document.getElementsByClassName("columnIshara");
+//var elementsMSA = document.getElementsByClassName("columnMSA");
+//var elementsForam = document.getElementsByClassName("columnForam");
+//var elementsIshara = document.getElementsByClassName("columnIshara");
 
-var y = document.getElementById('rowMSAID');
+var elementsMSA = document.getElementsByClassName("rowMSA");
+var elementsForam = document.getElementsByClassName("rowForam");
+var elementsIshara = document.getElementsByClassName("rowIshara");
+
+var y = document.getElementById("rowMSAID");
 var x = document.getElementById("rowForamID");
 var z = document.getElementById("rowIsharaID");
 // Declare a loop variable
@@ -49,6 +53,7 @@ function four() {
   for (i = 0; i < elementsIshara.length; i++) {
     elementsIshara[i].style.msFlex = "50%";  // IE10
     elementsIshara[i].style.flex = "50%";
+    
   }
 }
 

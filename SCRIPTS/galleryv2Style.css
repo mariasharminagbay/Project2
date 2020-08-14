@@ -49,37 +49,36 @@ body{
 	list-style:none;
 }
 
-#navbar li a:hover
-{
+#navbar li a:hover {
 	background-color:#3693ff;
 }
 
 li.dropdown {
 	display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #886c6c;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
-  }
+}
   
-  .dropdown-content a:hover {background-color: #a04646;}
+.dropdown-content a:hover {background-color: #a04646;}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
 	display: block;
-  }
+}
 
   
 li a, .dropbtn {
@@ -88,11 +87,11 @@ li a, .dropbtn {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-  }
+}
   
-  li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
 	background-color: red;
-  }
+}
 
 .text-primary{
 	color:#3693ff;
@@ -101,9 +100,9 @@ li a, .dropbtn {
 .galleryHeader {
 	text-align: center;
 	padding: 32px;
-  }
+}
 
-.rowMSA, .rowForam, .rowIshara {
+.rowMSA {
 	display: -ms-flexbox; /* IE 10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE 10 */
@@ -115,70 +114,62 @@ li a, .dropbtn {
 	margin: 0;
 	right: 0;
 	left: 0;
-  }
+}
+
   .clearfix {
 	overflow: auto;
-  }
+}
 
  /* Create two equal columns that sits next to each other */
-	.rowMSA, .rowForam, .rowIshara {
+  .rowMSA {
 	-ms-flex:25%; /* IE 10 */
 	flex: 25%;
-	padding: 0 50px;	
-	margin-bottom: 20px;
-  }
+	padding: 0 50px;	 
+	
+}
   
-	.rowMSA  img {
-	margin-top: 10px;
+  .rowMSA, #rowMSAID img {
+	margin-top: 8px;
 	vertical-align: middle;
-	padding: 0 5px;
-  }
+}
+   
+  #rowMSAID img {
+    width: 450px;
+    height: 300px;
+	padding: 0 10px;
+}
 
-  .rowForam  img {
-	margin-top: 10px;
-	vertical-align: middle;
-	padding: 0 5px;
-  }
 
-  .rowIshara  img {
-	margin-top: 10px;
-	vertical-align: middle;
-	padding: 0 5px;
-  }
 
   
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-	/*.columnMSA,.columnForam,.columnIshara { */
-	.rowMSA, .rowForam, .rowIshara {
-	 -ms-flex: 50%;
-	 flex: 50%;
-	 max-width: 50%;
-	 padding: 0 5px;
+	.rowMSA {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
 	}
-  }
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-	/*.columnMSA,.columnForam,.columnIshara { */
-	.rowMSA, .rowForam, .rowIshara {
-	 -ms-flex: 100%;
-	 flex: 100%;
-	 max-width: 100%;
-	 padding: 0 5px;
+@media screen and (max-width: 600px) {
+	.rowMSA {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
 	}
-  }
+}
 
 .btn:hover {
 	background-color: rgb(144, 154, 201);
-  }
+}
   
-  .btn, .active {
+/*.btn, .active {
 	background-color: rgb(66, 88, 211);
 	color: white;
-  }
+}
   
-  .btn {
+.btn {
 	border: none;
 	outline: none;
 	padding: 10px 16px;
@@ -186,9 +177,32 @@ li a, .dropbtn {
 	font-size: 18px;
 	background-color: rgb(66, 88, 211);
 	
-  }
+} */
 
-  * {
+* {
 	box-sizing: border-box;
-  }
+}
+
+
+#example{
+    background-repeat: repeat-x;    
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+#example .but1{    
+   
+    line-height: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right:0px;
+    display:inline-block;
+    position:relative;
+}
+
+#example .but1 a {
+    position:absolute;
+    top: 5px;
+    left: 5px;
+}
 
