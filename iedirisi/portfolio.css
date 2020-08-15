@@ -1,0 +1,249 @@
+header,footer{
+	border:4px;
+}
+#wrapper{
+	width:80%;
+	min-width:340px;
+	max-width:1100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:aliceblue;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.center{
+
+	dispaly:block;
+	margin-left:100px;
+	margin-right:50px;
+	width:100%;
+}
+.contact_me{
+	display block;
+
+}
+body{
+	font-family:Arial, sans-serif;
+	line-height: 1.4;
+	color: #333;
+	overflow-x: hidden;
+}
+
+.container{
+	max-width: 1100px
+	margin:auto;
+
+}
+p
+{
+	color:black;
+}
+.text-primary{
+
+	color:#3693ff
+}
+
+.bg-light{
+	background:#f4f4f4;
+	color:#333;
+}
+
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+	color: #fff;
+	padding:1.5rem 8rem;
+	position: sticky;
+	top:0;
+	z-index:1;
+	border-bottom:3px solid #3693ff;
+
+}
+
+#navbar ul{
+	display:flex;
+	align-items:center;
+	list-style:none;
+
+}
+
+#navbar h2 a{
+	color:#fff;
+	text-decoration:none;
+
+}
+
+#navbar li a{
+	text-decoration:none
+	color:#fff;
+	padding:1rem;
+	font-size:1.3rem;
+	margin:0 0.5rem;
+	border-radius:5px;
+	transition: background-color 0.3s;
+
+}
+
+#navbar li a:hover
+{
+	background-color:#3693ff;
+
+}
+/*Show case*/
+#showcase{
+	background:url('Background-1.jpg') no-repeat center center/cover;
+	height:35vh;
+
+}
+
+.showcase-contents{
+	display: flex;
+	flex-direction:column;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+	top:81px;
+	left:0;
+	bottom:0;
+	right:0;
+	background:rgba(0,0,0,0.6)
+
+}
+
+aside{
+	width:30%;
+	box-sizing:border-box;
+	float:left;
+	
+}
+
+main{
+	width:67%;
+	height:200%;
+	float:right;
+	box-sizing:border-box;
+}
+
+
+#about{
+	padding:5rem 0;
+}
+
+#about .about-image img
+{
+	display:block;
+	margin-left:auto;
+	width:15%;
+	border-radius:50%;
+	margin-top:20px;
+	float:right;
+	margin-left:10px;
+	
+}
+
+#web_des,#prog,#docum{
+	float:none;
+	width:50%;
+	height:50%
+	
+}
+
+#about,#work,#contact{
+	box-sizing:border-box;
+	width:100%;
+	padding:10px;
+	float:left;
+
+}
+
+.clear
+{
+	clear:right;
+	font-style:sans-serif;
+	text-align:left;
+	color:black;
+}
+.desc
+{
+	clear:left;
+	font-style:sans-serif;
+	text-align:left;
+	color:black;
+}
+
+
+.footer{
+	clear:both;
+	font-size:0.8em;
+	font-style:italic;
+	width:100%;
+	left:0;
+	bottom:0;
+	color:black;
+	float:bottom;
+	display:inline-block
+	text-align:center;	
+	
+}
+
+.footer-social-icons{
+	height:120px;
+	width:3120px;
+}
+
+
+#contact{
+	text-align:left;
+	font-size:rem;
+	margin-bottom:2rem;
+}
+#services{
+	padding:5rem 0;
+
+}
+
+#services h3{
+	text-align:center;
+	margin-bottom:2rem;
+	font-size:1rem;
+}
+#services .boxes{
+	display:flex;
+	flex:1;
+	padding:3rem;
+	margin:0 3rem;
+	border-radius:10px;
+	box-shadow:2px 2px 5px #d1d1d1;
+	font-size:1.3rem;
+	
+}
+
+#contact .description{
+	text-align:left;
+	float:left;
+	font-size:1rem;
+	font-style:calibre;
+	margin-left:0px;
+
+
+}
+
+table{
+	width:75%;
+		
+}
+
+td,th{	margin-left:0.5rem;
+	text-align:left;
+	width:5%;
+	padding:5px;
+	font-style:italic;
+}
+
