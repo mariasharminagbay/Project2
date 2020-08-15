@@ -191,4 +191,18 @@ li a, .dropbtn {
   * {
 	box-sizing: border-box;
   }
+  /*Zoom on hoover*/
 
+  .zoom {
+	padding: 50px;
+	transition: transform .2s;
+	width: 700px;
+	height: 650px;
+	margin: 0 auto;
+  }
+  
+  .zoom:hover {
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	transform: scale(1.5); 
+  }
