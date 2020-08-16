@@ -193,7 +193,7 @@ li a, .dropbtn {
   }
   /*Zoom on hoover*/
 
-  .zoom {
+ /* .zoom {
 	padding: 50px;
 	transition: transform .2s;
 	width: 700px;
@@ -205,4 +205,42 @@ li a, .dropbtn {
 	-ms-transform: scale(1.5); 
 	-webkit-transform: scale(1.5); 
 	transform: scale(1.5); 
-  }
+  }*/
+
+div.test1 {
+    position: relative;
+    float:left;
+    margin:5px;
+}
+div.test1:hover img{
+    opacity:0.5;
+}
+div.test1:hover input {
+    display: block;
+}
+div.test1 input {
+    position:absolute;
+    display:none;
+}
+div.test1 input.resize {
+    top:5%;
+    left:5%;
+}
+div.test1 input.top {
+    top:5%;
+    left:10%;
+}
+div.test1 input.before {
+    top:5%;
+    left:15%;
+}
+div.test1 input.after {
+    top:5%;
+    left:20%;
+}
+div.test1 input.bottom {
+    top:5%;
+    left:25%;
+}
+
+
