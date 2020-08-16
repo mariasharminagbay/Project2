@@ -197,16 +197,21 @@ li a, .dropbtn {
   * {
 	box-sizing: border-box;
   }
-img{
-	float:left;
-
-}
-.vision{
-	
-
-}
-
 .mission{
-	
+	float:left;
+	width:450px;
+	height:500px;
 
+}
+.img{
+	float:left;
+}
+.mission-para{
+	margin-left: 400px;
+}
+.vision-para{
+	margin-left: 400px;
+}
+.vandm{
+	align-content: center;
 }
