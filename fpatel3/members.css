@@ -11,7 +11,7 @@ header,footer{
 }
 
 .paragraph{
-font-size: 10;
+font-size: 20px;
 font-style: italic;
 
 }
@@ -173,7 +173,7 @@ main{
   align-items: center;
   text-align: center;
   
-  background-color:#B2C248;
+  background-color: #ECE5B6;
 
 }
 .flex-about-f{
@@ -227,7 +227,7 @@ main{
 	left:0;
 	bottom:0;
 	color:black;
-	float:bottom;
+    
 	display:inline-block;
 	text-align:center;	
 	
@@ -251,6 +251,8 @@ main{
 	font-size:1rem;
 }
 #services .boxes{
+   
+
 	display:flex;
 	flex:1;
 	padding:3rem;
@@ -259,6 +261,9 @@ main{
 	box-shadow:2px 2px 5px #d1d1d1;
 	font-size:1.3rem;
 	
+}
+.box{
+    height: 380px;
 }
 
 .img2 {
