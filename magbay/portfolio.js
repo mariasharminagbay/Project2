@@ -1,7 +1,7 @@
 function download() { 
               
     // var text = document.getElementById("text").value; 
-    var file = "/fpatel3/Latest_resume_with_cover_letter.docx"; 
+    var file = "/magbay/AgbayMariaSharminResume.docx"; 
     var element = document.createElement('a'); 
     element.setAttribute('href',  
     'data:text/plain;charset=utf-8, ' ); 
