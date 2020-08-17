@@ -9,6 +9,11 @@ header,footer{
 	margin-right:auto;
 	background-color:aliceblue;
 }
+.mem-name{
+	font-style:Georgia;
+	font-style: bold;
+	color: indigo;
+}
 
 .paragraph{
 font-size: 20px;
@@ -16,7 +21,9 @@ font-style: italic;
 color: black;
 
 }
-
+a{
+color: #a04646;
+}
 *{
 	margin: 0;
 	padding: 0;
