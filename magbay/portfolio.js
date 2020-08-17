@@ -2,17 +2,7 @@ function download() {
               
     // var text = document.getElementById("text").value; 
     var file = "/magbay/AgbayMariaSharminResume.docx"; 
-    var element = document.createElement('a'); 
-    element.setAttribute('href',  
-    'data:text/plain;charset=utf-8, ' ); 
-    element.setAttribute('download', file); 
-  
-    document.body.appendChild(element); 
-  
-    
-    element.click(); 
-  
-    document.body.removeChild(element); 
+    document.getElementById('my_iframe').src = file;
 } 
   
 // console.log(document.getElementById("btnResume"))
