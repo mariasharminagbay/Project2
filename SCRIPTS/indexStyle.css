@@ -232,6 +232,14 @@ li a, .dropbtn {
 	text-align: center;
 	font-size:20px;
 }
+
+.list-para{
+	margin-left: 400px;
+	font-style:verdana;
+	text-align: center;
+	font-size:20px;
+	color:#342D7E;
+}
 .list{
 	text-align: center;
 	font-size:20px;
