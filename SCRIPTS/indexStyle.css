@@ -283,7 +283,7 @@ li a, .dropbtn {
 	  .grid-container {
 		margin-left: 450px;
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto auto auto auto;
 		background-color: #737CA1;
 		padding: 10px;
 	  }
