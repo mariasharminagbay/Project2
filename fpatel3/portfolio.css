@@ -181,17 +181,15 @@ main{
 	box-shadow: 0 4px 25px rgba(14,36,49,.15);
 	border-radius: .5rem;
 	overflow: hidden;
-	width: 180px;
-	height: 120px;
+	width: 200px;
+	height: 150px;
 	background-color: bisque;
   }
   .work__img img{
 	transition: 1s;
 	cursor: pointer;
   }
-  .work__img img:hover{
-	transform: scale(1.1);
-  }
+  
 
   .work__container{
 	  display: grid;
