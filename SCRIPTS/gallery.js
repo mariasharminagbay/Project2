@@ -90,47 +90,96 @@ function zoomout(){
 
 
 function toggleColor(imgid) {
-  //var el = document.getElementById(imgid);
-  
-
-  /*if (!el.style.color || el.style.color == "blue")
-    el.style.color = "red";
-  
-  else
-    el.style.color = "blue"; */
-  /*var el = imgid;
-  el.src = imgid.src;
-  el.setAttribute("src", imgid.src);
-  el.style.width = "550px";
-  el.style.height = "650px";
-  el.setAttribute("alt","image resize");
-  el.innerHTML = imgid.alt;
-
-  el.parentElement.style.display = "block"; */
-
-
   var myImg = document.getElementById(imgid);
-  //alert(myImg);
+  //alert(imgid);
   var currWidth = myImg.clientWidth;
   var currheigt = myImg.clientHeight;
 
+
   if(currWidth == 450){
-    myImg.style.width = (currWidth + 200) + "px";
-    myImg.style.height = (currheigt + 200) + "px";
-      
-  } else if (currWidth == 650){
-    myImg.style.width = (currWidth + 200) + "px";
-    myImg.style.height = (currheigt + 200) + "px";
+    //alert("450");
+    myImg.style.width = (currWidth + 500) + "px";
+    myImg.style.height = (currheigt + 500) + "px";
+    //alert(currWidth + " after");  
+  } else if (currWidth == 950){
+    //alert("650");
+
+    myImg.style.width = (currWidth + 500) + "px";
+    myImg.style.height = (currheigt + 500) + "px";
+    //alert(currWidth + " after");
+
   } 
-  else if (currWidth == 850){
-    alert(currWidth);
-    myImg.style.width = (currWidth - 400) + "px";
-    myImg.style.height = (currheigt - 400) + "px";
+  else if (currWidth ==  1451){
+    //alert(currWidth + " 1451?");
+    
+    myImg.style.width = "100vw";
+    myImg.style.height = "100vh";
   }
   else
   {
     myImg.style.width = "450px";
     myImg.style.height = "300px";
   }
+
+}
+
+
+function getNumImages() {
+  var x = document.images.length;
+  alert(x);
+  //document.getElementById("demo").innerHTML = x;
+  var y = document.getElementById("rowMSAID").querySelectorAll("img").length;
+  alert(y);
+
+}
+
+function moveRight(imgid){
+  //alert(imgid);
+  var myImg = document.getElementById(imgid);
+  
+  alert("left:" + myImg.offsetLeft + " - top: " + myImg.offsetTop);
+
+  //get the left of clicked image
+  var imgFromLeft = myImg.offsetLeft;
+  var imgFromTop = myImg.offsetTop;
+  
+  var imgright = imgid + 1;
+  alert("imgid + 1 " + imgright);
+
+  var myImgright = document.getElementById(imgright);
+  alert(myImgright);
+  alert("left:" + myImgright.offsetLeft + " - top: " + myImgright.offsetTop);
+
+  //get the position of the right image to be moved to the left
+  var imgRightToLeftLeft = myImgright.offsetLeft;
+  alert(imgRightToLeftLeft);
+  var imgRighttoLeftTop = myImgright.offsetTop;
+
+
+    //set the position now
+    document.getElementById(imgid).style.position = "sticky";
+    document.getElementById(imgid).style.left = myImgright.offsetLeft + "px";
+    document.getElementById(imgid).style.top = myImgright.offsetTop  + "px";
+
+
+    moveLeft(53);
+
+
+
+
+  //get the 
+
+  //var toLeft = imgid - 1;
+  //alert(toLeft);
+  //document.getElementById(toLeft).style.left = "-100px";
+  //document.getElementById(imgid).style.right = "+100px";
+}
+
+function moveLeft(imgidleft){
+alert("helloleft");
+  
+  document.getElementById("53").style.position = "absolute";
+  document.getElementById("53").style.left = "743px"; //imgFromLeft.offsetLeft  + "px";
+  document.getElementById("53").style.top = "5px";//imgFromTop.offsetTop  + "px";
 
 }
