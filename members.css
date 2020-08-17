@@ -217,6 +217,11 @@ main{
 
 }
 
+.list{
+	font-style:sans-serif;
+	text-align:center;
+	color:black;
+}
 
 .flex-about-i{
 
