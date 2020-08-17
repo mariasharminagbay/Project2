@@ -56,6 +56,7 @@ p
 	color:#333;
 }
 
+
 #navbar{
 	display: flex;
 	justify-content: space-between;
@@ -66,7 +67,6 @@ p
 	top:0;
 	z-index:1;
 	border-bottom:3px solid #3693ff;
-
 }
 
 #navbar ul{
