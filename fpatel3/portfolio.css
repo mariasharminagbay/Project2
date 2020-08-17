@@ -28,14 +28,16 @@ header,footer{
 
 }
 body{
-	font-family:Arial, sans-serif;
+	font-family:Arial;
+	font-size: 20px;
+	font-style: italic;
 	line-height: 1.4;
 	color: #333;
 	overflow-x: hidden;
 }
 
 .container{
-	max-width: 1100px
+	max-width: 1100px;
 	margin:auto;
 
 }
@@ -121,7 +123,7 @@ aside{
 	width:30%;
 	box-sizing:border-box;
 	float:left;
-	
+
 }
 
 main{
@@ -243,7 +245,7 @@ main{
 	bottom:0;
 	color:black;
 	float:bottom;
-	display:inline-block
+	display:inline-block;
 	text-align:center;	
 	
 }
