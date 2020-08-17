@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
-	<link rel="stylesheet" href="../iedirisi/portfolio.css">
+	<link rel="stylesheet" href="/iedirisi/portfolio.css">
 </head>
-
+<script src="/fpatel3/portfolio.js"></script>
 <body id="home">
 	<nav id="navbar">
 	<h2><a href="#home"><span class="text-primary">Ishara </span>Edirisinghe</a></h2>
@@ -15,17 +15,17 @@
 	   <li><a href="#about">About</a></li>
 	   <li><a href="#work">Work</a></li>
 	   <li><a href="#contact">Contact</a></li>
-	   <li><a href="../magbay/index.html">Main_Page</a></li>
+	   <li><a href="/index.html">Main_Page</a></li>
 	</ul>
 	</nav>
 	
-	<header id="showcase">
-	  <div class="showcase-content">
-	     <div class="container">		
-	    </div>
-	  </div>
-	</header>
-
+	<div class="galleryHeader" id="mygalleryHeader">
+		<h1>Resume</h1>
+		
+        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20pt;">Click on the buttons to Download.</p>
+        
+        <button class="btn" id="btnResume" onclick="download()" >Download_Resume</button>
+    </div>
 
 	<aside>
 	<section id="services" class="bg-light">
@@ -99,7 +99,7 @@
 		<p1 class="clear">
 		
 		<div class="about-image">
-		<img src="Me_Pic.jpg"  alt="My Picture">
+		<img src="/IMAGES/Me_Pic.jpg"  alt="My Picture">
 		</div>
 		I'm a student at confederation college who'e following ICT solutions programme. This programme is targeting basically small and medium businesses which are trying to
 		develop their business in the fast phased environment. Throughout my course, I get the lot of knowledge 
@@ -118,35 +118,41 @@
 	</div>
 	</section>
 
-	 <section id="work">
-	  <div class="container">
-	    <h2>My <span class="text-primary"> Work</span></h2>
-	    <div class="center">
-		<h3>Web <span class="text-primary">Designing</span></h3>
-		<div class="boxes">
-		<div class="box">
-		<img id="web_des" src="Web_Design.jpg" alt="Web designing">		  
-		</div>
-		</div>
-		
-		
-		<h3>Docume<span class="text-primary">ntation</span></h3>
-		<div class="boxes">
-		<div class="box">
-		<img id="docum" src="Documentation.jpg" alt="Documentation">
-		  </div>
-		</div>
-
-		<h3>System <span class="text-primary">Programming</span></h3>	
-		<div class="boxes">
-		<div class="box">
-		   <img id="prog" src="Programming.jpg" alt="Programming>
-		  </div>
-		</div>
-		</div>
-		</div>		
 	
-	</section>																																		
+	<section class="work section" id="work">
+		<h2 class="section-title">Work</h2>
+
+		<div class="work__container bd-grid">
+			<div class="work__img">
+				<a href="https://github.com/fpatel3/Group2Lab1" >
+				<img src="assets/img/work1.jpg" alt="Web Designing 1"> </a>
+			</div>
+			<div class="work__img">
+				<a href="https://github.com/fpatel3/Group-1-Lab2" >
+				<img  src="assets/img/work2.jpg" alt="Web Designing 2"> </a>
+			</div>
+			<div class="work__img">
+				<a href="https://www.codewars.com/users/fpatel3/completed">
+				<img src="assets/img/work3.jpg" alt="Java Script Examples"></a>
+			</div>
+			<div class="work__img">
+				<a href="https://github.com/mariasharminagbay/IM115Group5Lab4" >
+				<img src="assets/img/work4.jpg" alt="Web Designing 3"></a>
+			</div>
+			<div class="work__img">
+				<a href="https://github.com/mariasharminagbay/Group5Lab5">
+				<img src="assets/img/work5.jpg" alt="Web Designing 4"></a>
+			</div>
+			<div class="work__img">
+				<a href="https://github.com/fpatel3/Group3-Project1"></a>
+				<img src="assets/img/work6.jpg" alt="Web Designing 5"></a>
+			</div>
+			<div class="work__img">
+				
+					<u><H5 style="color: blue; text-align: center; margin-top: 50px;">To Be Annonced</H5></u>
+			</div>
+		</div>
+	</section>
 
 	<section id="contact">
 	<div class="container">
