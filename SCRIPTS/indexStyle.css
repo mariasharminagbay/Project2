@@ -215,8 +215,8 @@ li a, .dropbtn {
   }
 .mission{
 	float:left;
-	width:400px;
-	height:300px;
+	width:600px;
+	height:400px;
 
 }
 .img{
@@ -225,10 +225,12 @@ li a, .dropbtn {
 .mission-para{
 	margin-left: 400px;
 	text-align: center;
+	font-size:20px;
 }
 .vision-para{
 	margin-left: 400px;
 	text-align: center;
+	font-size:20px;
 }
 .vandm{
 	text-align: center;
@@ -255,7 +257,7 @@ li a, .dropbtn {
 			width:250px;
 
 	  }
-	 /* 
+	  
 	 	.flex-container {
 		display: flex;
 		justify-content: center;
@@ -264,14 +266,15 @@ li a, .dropbtn {
 
 	 .flex-container > div {
 		background-color: #f1f1f1;
-		width: 100px;
+		width: 200px;
 		margin: 50px;
 		text-align: justify;
 		font-size: 30px;
 
-	  }*/
+	  }
 	  .grid-container {
-		  margin-left: 145px;
+		margin-right:auto;
+		margin-left:auto;
 		display: grid;
 		grid-template-columns: auto auto auto;
 		background-color: #737CA1;
@@ -285,7 +288,7 @@ li a, .dropbtn {
 		text-align: center;
 	  }
 	  /*Flippping Image*/
-	  .flip-box {
+	  .flip-box {	
 		background-color: transparent;
 		width: 300px;
 		height: 300px;

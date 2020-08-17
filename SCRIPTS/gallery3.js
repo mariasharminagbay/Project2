@@ -69,7 +69,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function swap_after(argument)
+function swap_after1(argument)
 {
     var img1,img2;
     img1=document.getElementById('img1').src;
@@ -78,37 +78,16 @@ function swap_after(argument)
     document.getElementById('img1').src=img2;
 
 }
+function swap_after2(argument)
+{
+    var img1,img2;
+    img1=document.getElementById('img1').src;
+    img2=document.getElementById('img2').src;
+    document.getElementById('img2').src=img1;
+    document.getElementById('img1').src=img2;
 
-var imgThumbs = new Array (
-    "t1.jpg",
-    "t2.jpg",
-    "t3.jpg"
-    )
-    
-    //Main Image Array
-    var imgArray = new Array (
-    "f1.jpg",
-    "f2.jpg",
-    "f3.jpg"
-    )
-    
-    //Image Path
-    var imgPath = "images/portfolio/samples/";
-    
-    function preloadImages() {
-         for(var i = 0; i < imgArray.length; i++) {
-              var tmpImg = new Image;
-              tmpImg.src = imgPath + imgArray[i];
-         }
-    }
-//Thumbnail Image Swap Function
-function loadThumb(thumbID) {
-    var theThumb = document.getElementById('theThumb');
-    var newThumb;
-    newThumb = imgThumbs[thumbID];
-    theThumb.src = imgPath + newThumb;
 }
-
+/*
 //Main Image Swap Function
 function swapImage(imgID) {
     var theImage = document.getElementById('theImage');
@@ -116,8 +95,71 @@ function swapImage(imgID) {
     newImg = imgArray[imgID];
     theImage.src = imgPath + newImg;
 }
-
+*/
    
+/*function ZoomIn(){
+    var myImg=document.getElementById("img1");
+    var currWidth=myImg.clientWidth;
+    myImg.style.width=(currWidth + 50) + "px";
+
+}*/
+var currentpic=0;
+function swap(){
+    var images = new Array()
+    images[0]= "/IMAGES/1.jpg" 
+    images[1]= "/IMAGES/2.jpg"
+    images[2]= "/IMAGES/3.jpg"
+
+    var lastpic= images.length-1;
+ if (currentpic != lastpic)
+ {
+    currentpic=0;
+    document.getElementById('img1').src = images[currentpic];
+ }else
+  {
+    currentpic++;
+    document.getElementById('img2').src = images[currentpic];
+  }
+
+  var n,(n-1);
+  n=document.getElementById('img1').src;
+  (n-1)=document.getElementById('img2').src;
+  document.getElementById('img2').src=img1;
+  document.getElementById('img1').src=img2;
+}
+
+/*
+var count=0;
+function imageGrow(imgs){
+    count += 1;
+    z=count % 4;
+
+    if(z==1)
+    {
+        var x=imgs;
+        x.src=imgs.src;
+        x.setAttribute("src",imgs.src);
+        x.style.width="50vw";
+        x.style.height="50vh";
+        x.setAttribute("alt","image resize");
+        x.innerHTML=imgs.alt;
+        x.parentElement.style.display="block";
+
+    }
+
+    if(z==2)
+    {
+        var x=imgs;
+        x.src=imgs.src;
+        x.setAttribute("src",imgs.src);
+        x.style.width="75vw";
+        x.style.height="75vh";
+        x.setAttribute("alt","image resize");
+        x.innerHTML=imgs.alt;
+        x.parentElement.style.display="block";
+    }*/
+
+
 
 
 
