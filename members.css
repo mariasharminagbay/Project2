@@ -13,6 +13,7 @@ header,footer{
 .paragraph{
 font-size: 20px;
 font-style: italic;
+color: black;
 
 }
 
@@ -213,15 +214,11 @@ main{
   text-align: center;
   
   background-color: #B2C248;
+  color: black;
   
 
 }
 
-.list{
-	font-style:sans-serif;
-	text-align:center;
-	color:black;
-}
 
 .flex-about-i{
 
@@ -232,6 +229,7 @@ main{
   text-align: center;
   
   background-color: #ECE5B6;
+  color: black
 
 }
 .flex-about-f{
@@ -243,6 +241,7 @@ main{
   text-align: center;
  
   background-color:  #ECE5B6;
+  color: black
 
 }
 
