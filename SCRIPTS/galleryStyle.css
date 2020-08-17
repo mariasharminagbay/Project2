@@ -224,23 +224,23 @@ div.test1 input {
 }
 div.test1 input.resize {
     top:5%;
-    left:5%;
+    left:3%;
 }
 div.test1 input.top {
     top:5%;
-    left:10%;
+    left:5%;
 }
 div.test1 input.before {
     top:5%;
-    left:15%;
+    left:7%;
 }
 div.test1 input.after {
     top:5%;
-    left:20%;
+    left:9%;
 }
 div.test1 input.bottom {
     top:5%;
-    left:25%;
+    left:11%;
 }
 
 
