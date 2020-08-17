@@ -10,6 +10,12 @@ header,footer{
 	background-color:aliceblue;
 }
 
+.paragraph{
+font-size: 10;
+font-style: italic;
+
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -149,10 +155,10 @@ main{
 
   justify-content: center;
   display: flex;
-  height: 380px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+  
   background-color: #B2C248;
   
 
@@ -163,10 +169,10 @@ main{
 
   justify-content: center;
   display: flex;
-  height: 380px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+  
   background-color:#B2C248;
 
 }
@@ -174,10 +180,10 @@ main{
 
   justify-content: center;
   display: flex;
-  height: 370px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+ 
   background-color:  #ECE5B6;
 
 }
