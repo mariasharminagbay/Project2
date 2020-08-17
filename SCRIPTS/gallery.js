@@ -68,3 +68,69 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function zoomin(){
+  var myImg = document.getElementById("sky");
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 500){
+      alert("Maximum zoom-in level reached.");
+  } else{
+      myImg.style.width = (currWidth + 50) + "px";
+  } 
+}
+function zoomout(){
+  var myImg = document.getElementById("sky");
+  var currWidth = myImg.clientWidth;
+  if(currWidth == 50){
+      alert("Maximum zoom-out level reached.");
+  } else{
+      myImg.style.width = (currWidth - 50) + "px";
+  }
+}
+
+
+function toggleColor(imgid) {
+  //var el = document.getElementById(imgid);
+  
+
+  /*if (!el.style.color || el.style.color == "blue")
+    el.style.color = "red";
+  
+  else
+    el.style.color = "blue"; */
+  /*var el = imgid;
+  el.src = imgid.src;
+  el.setAttribute("src", imgid.src);
+  el.style.width = "550px";
+  el.style.height = "650px";
+  el.setAttribute("alt","image resize");
+  el.innerHTML = imgid.alt;
+
+  el.parentElement.style.display = "block"; */
+
+
+  var myImg = document.getElementById(imgid);
+  //alert(myImg);
+  var currWidth = myImg.clientWidth;
+  var currheigt = myImg.clientHeight;
+
+  if(currWidth == 450){
+    myImg.style.width = (currWidth + 200) + "px";
+    myImg.style.height = (currheigt + 200) + "px";
+      
+  } else if (currWidth == 650){
+    myImg.style.width = (currWidth + 200) + "px";
+    myImg.style.height = (currheigt + 200) + "px";
+  } 
+  else if (currWidth == 850){
+    alert(currWidth);
+    myImg.style.width = (currWidth - 400) + "px";
+    myImg.style.height = (currheigt - 400) + "px";
+  }
+  else
+  {
+    myImg.style.width = "450px";
+    myImg.style.height = "300px";
+  }
+
+}
