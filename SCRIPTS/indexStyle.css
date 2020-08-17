@@ -269,6 +269,7 @@ li a, .dropbtn {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		
 	  }
 
 	 .flex-container > div {
@@ -280,8 +281,7 @@ li a, .dropbtn {
 
 	  }
 	  .grid-container {
-		margin-right:auto;
-		margin-left:auto;
+		margin-left: 450px;
 		display: grid;
 		grid-template-columns: auto auto auto;
 		background-color: #737CA1;
@@ -336,8 +336,8 @@ li a, .dropbtn {
 	  }
 	  /*Service Heading*/
 	  .serv-h{
-		  margin-left:175px;
-		  text-align: center ;
+		  
+		  margin-left:800px;
 		  font-size: 30px;
 		  color: #0000A0;
 	  }
