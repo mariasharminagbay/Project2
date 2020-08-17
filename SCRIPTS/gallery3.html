@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="/SCRIPTS/gallery3.css">
+    <link rel="stylesheet" href="/SCRIPTS/galleryStyle.css">
     
     
 </head>
@@ -39,14 +39,17 @@
     <div class="rowMSA" id="rowMSAID">
             <div class="test1">
                 <img id="img1" src="/IMAGES/1.jpg" style="width: 450px;height: 300px;">
-                <input class="resize" type="button" value="" />
-                <input class="top" type="button" value="" />
-                <input class="before" type="button" value="" />
-                <input class="after" type="button" value="" />
+                <input class="resize" type="submit" value="Resize" />
+                <input class="top" type="submit" value="Top"/>
+                <input class="before" type="submit" value="Before" />
+                <input class="after" type="submit" value="After" onclick="swap_after()"/>
+              <!-- <button onclick="swap_after()">After</button>-->
+                <input class="bottom" type="submit" value="Bottom" />
             </div>
+            
             <div class="test1">
-                <img src="/IMAGES/2.jpg" style="width: 450px;height: 300px;">
-                <input class="resize" type="button" value="After" />
+                <img id="img2" src="/IMAGES/2.jpg" style="width: 450px;height: 300px;">
+                <input class="resize" type="button" value="" />
                 <input class="top" type="button" value="" />
                 <input class="before" type="button" value="" />
                 <input class="after" type="button" value="" />
@@ -117,7 +120,7 @@
             </div>
 
             <div class="test1">
-                <img src="/IMAGES/12.jpg" id="" style="width: 450px;height: 300px;">
+                <img src="/IMAGES/12.jpg" style="width: 450px;height: 300px;">
                 <input class="resize" type="button" value="" />
                 <input class="top" type="button" value="" />
                 <input class="before" type="button" value="" />
@@ -125,6 +128,9 @@
             </div>
 
     </div>
+
+
+
 
     <div class="rowForam" id="rowForamID">
             
@@ -174,5 +180,5 @@
     </footer>
 
 </body>
-<script src="/SCRIPTS/gallery.js"></script>
+<script src="/SCRIPTS/gallery3.js"></script>
 </html>

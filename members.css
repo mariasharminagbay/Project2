@@ -10,6 +10,12 @@ header,footer{
 	background-color:aliceblue;
 }
 
+.paragraph{
+font-size: 20px;
+font-style: italic;
+
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -149,10 +155,10 @@ main{
 
   justify-content: center;
   display: flex;
-  height: 380px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+  
   background-color: #B2C248;
   
 
@@ -163,21 +169,21 @@ main{
 
   justify-content: center;
   display: flex;
-  height: 380px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
-  background-color:#B2C248;
+  
+  background-color: #ECE5B6;
 
 }
 .flex-about-f{
 
   justify-content: center;
   display: flex;
-  height: 370px;
+  height: 500px;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+ 
   background-color:  #ECE5B6;
 
 }
@@ -221,7 +227,7 @@ main{
 	left:0;
 	bottom:0;
 	color:black;
-	float:bottom;
+    
 	display:inline-block;
 	text-align:center;	
 	
@@ -245,6 +251,8 @@ main{
 	font-size:1rem;
 }
 #services .boxes{
+   
+
 	display:flex;
 	flex:1;
 	padding:3rem;
@@ -253,6 +261,9 @@ main{
 	box-shadow:2px 2px 5px #d1d1d1;
 	font-size:1.3rem;
 	
+}
+.box{
+    height: 380px;
 }
 
 .img2 {
