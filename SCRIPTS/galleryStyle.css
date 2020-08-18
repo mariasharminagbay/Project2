@@ -191,21 +191,6 @@ li a, .dropbtn {
   * {
 	box-sizing: border-box;
   }
-  /*Zoom on hoover*/
-
- /* .zoom {
-	padding: 50px;
-	transition: transform .2s;
-	width: 700px;
-	height: 650px;
-	margin: 0 auto;
-  }
-  
-  .zoom:hover {
-	-ms-transform: scale(1.5); 
-	-webkit-transform: scale(1.5); 
-	transform: scale(1.5); 
-  }*/
 
 div.test1 {
     position: relative;
@@ -243,22 +228,19 @@ div.test1 input.bottom {
     left:11%;
 }
 
-#52
-{
-	position: sticky;
-}
 
-#53{
-	position: sticky;
-}
+#51 { position: absolute; }
+#52 { position: absolute; }
 
-#54{ 	position: sticky; }
-#55{ 	position: sticky; }
-#56{ 	position: sticky; }
-#57{ 	position: sticky; }
-#58{ 	position: sticky; }
-#59{ 	position: sticky; }
-#60{ 	position: sticky; }
+#53{ position: absolute; }
+
+#54{ 	position: absolute; }
+#55{ 	position: absolute; }
+#56{ 	position: absolute; }
+#57{ 	position: absolute; }
+#58{ 	position: absolute; }
+#59{ 	position: absolute; }
+#60{ 	position: absolute; }
 
 
 

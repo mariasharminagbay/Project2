@@ -134,52 +134,59 @@ function getNumImages() {
 }
 
 function moveRight(imgid){
-  //alert(imgid);
-  var myImg = document.getElementById(imgid);
-  
-  alert("left:" + myImg.offsetLeft + " - top: " + myImg.offsetTop);
+  //1. alert(imgid);
+  var myImg = document.getElementById(imgid); //getting element of the clicked image
+  alert("left: " + myImg.offsetLeft + " - top: " + myImg.offsetTop);  //for testing
 
-  //get the left of clicked image
-  var imgFromLeft = myImg.offsetLeft;
+  //2. get the left and top of clicked image
+  var imgFromLeft = myImg.offsetLeft; 
   var imgFromTop = myImg.offsetTop;
-  
-  var imgright = imgid + 1;
-  alert("imgid + 1 " + imgright);
+  alert("left: " + imgFromLeft);
+  alert("top: " + imgFromTop);
+  //
+
+  //1.
+  var imgright = imgid + 1;  //getting the next image
+  alert("imgid + 1 is :" + imgright);
 
   var myImgright = document.getElementById(imgright);
-  alert(myImgright);
+  //alert(myImgright);
   alert("left:" + myImgright.offsetLeft + " - top: " + myImgright.offsetTop);
 
-  //get the position of the right image to be moved to the left
+  //2. get the position of the right image to be moved to the left
   var imgRightToLeftLeft = myImgright.offsetLeft;
-  alert(imgRightToLeftLeft);
   var imgRighttoLeftTop = myImgright.offsetTop;
-
+  alert("left2: " + imgRightToLeftLeft);
+  alert("top2: " + imgRighttoLeftTop);
 
     //set the position now
     document.getElementById(imgid).style.position = "sticky";
-    document.getElementById(imgid).style.left = myImgright.offsetLeft + "px";
-    document.getElementById(imgid).style.top = myImgright.offsetTop  + "px";
+    document.getElementById(imgid).style.left = imgRightToLeftLeft + "px";//myImgright.offsetLeft + "px";
+    document.getElementById(imgid).style.top = imgRighttoLeftTop + "px";//myImgright.offsetTop  + "px";
 
+    moveLeft(imgFromLeft,imgFromTop,imgright); //original left position:orignal top position: on the right image
 
-    moveLeft(53);
-
-
-
-
-  //get the 
-
-  //var toLeft = imgid - 1;
-  //alert(toLeft);
-  //document.getElementById(toLeft).style.left = "-100px";
-  //document.getElementById(imgid).style.right = "+100px";
 }
 
-function moveLeft(imgidleft){
+function moveLeft(imgFromLeft, imgFromTop,imgright){
 alert("helloleft");
+
+//var myImgright = document.getElementById(imgright);
+  alert(imgFromLeft);
+  alert(imgFromTop);
   
-  document.getElementById("53").style.position = "absolute";
-  document.getElementById("53").style.left = "743px"; //imgFromLeft.offsetLeft  + "px";
-  document.getElementById("53").style.top = "5px";//imgFromTop.offsetTop  + "px";
+document.getElementById(imgright).style.position = "absolute";
+document.getElementById(imgright).style.left = imgFromLeft  + "px";
+document.getElementById(imgright).style.top = imgFromTop  + "px";
+
+}
+
+function changeRight(clickedImageID){
+var imageClicked = document.getElementById(clickedImageID);
+var toReplaceImgID = clickedImageID + 1;
+
+//set attribute
+
+
 
 }
