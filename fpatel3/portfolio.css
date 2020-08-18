@@ -18,19 +18,18 @@ header,footer{
 }
 .center{
 
-	dispaly:block;
+	display: block;
 	margin-left:100px;
 	margin-right:50px;
 	width:100%;
 }
 .contact_me{
-	display block;
+	display: block;
 
 }
 body{
 	font-family:Arial;
 	font-size: 20px;
-	font-style: italic;
 	line-height: 1.4;
 	color: #333;
 	overflow-x: hidden;
@@ -47,7 +46,7 @@ p
 }
 .text-primary{
 
-	color:#3693ff
+	color:#3693ff;
 }
 
 .bg-light{
@@ -82,7 +81,7 @@ p
 }
 
 #navbar li a{
-	text-decoration:none
+	text-decoration:none;
 	color:#fff;
 	padding:1rem;
 	font-size:1.3rem;
@@ -142,7 +141,7 @@ main{
 {
 	display:block;
 	margin-left:auto;
-	width:15%;
+	
 	border-radius:50%;
 	margin-top:20px;
 	float:right;
