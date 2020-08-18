@@ -2,10 +2,6 @@ window.onload = function() {
     document.getElementById("btnMSA").click();
 
 }
-// Get the elements with class="column"
-//var elementsMSA = document.getElementsByClassName("columnMSA");
-//var elementsForam = document.getElementsByClassName("columnForam");
-//var elementsIshara = document.getElementsByClassName("columnIshara");
 
 var elementsMSA = document.getElementsByClassName("rowMSA");
 var elementsForam = document.getElementsByClassName("rowForam");
@@ -44,7 +40,7 @@ function two() {
     elementsMSA[i].style.msFlex = "50%";  // IE10
     elementsMSA[i].style.flex = "50%";
 
-    h1value.innerHTML = " Maria's hobbies are cooking and eating delicious and healthy foods";
+    h1value.innerHTML = " Maria's hobbies are cooking delicious and healthy foods";
   }
 }
 
@@ -77,27 +73,22 @@ for (var i = 0; i < btns.length; i++) {
 
 function toggleLeftRight(imgid) {
   var myImg = document.getElementById(imgid);
-  //alert(imgid);
   var currWidth = myImg.clientWidth;
   var currheigt = myImg.clientHeight;
 
-
   if(currWidth == 450){
-    //alert("450");
+    
     myImg.style.width = (currWidth + 500) + "px";
     myImg.style.height = (currheigt + 500) + "px";
-    //alert(currWidth + " after");  
+ 
   } else if (currWidth == 950){
-    //alert("650");
 
     myImg.style.width = (currWidth + 500) + "px";
     myImg.style.height = (currheigt + 500) + "px";
-    //alert(currWidth + " after");
 
   } 
   else if (currWidth ==  1451){
-    //alert(currWidth + " 1451?");
-    
+   
     myImg.style.width = "100vw";
     myImg.style.height = "100vh";
   }
@@ -113,7 +104,6 @@ function toggleLeftRight(imgid) {
 function moveLeft(imgFromLeft, imgFromTop,imgright){
 alert("helloleft");
 
-//var myImgright = document.getElementById(imgright);
   alert(imgFromLeft);
   alert(imgFromTop);
   
@@ -122,6 +112,7 @@ document.getElementById(imgright).style.left = imgFromLeft  + "px";
 document.getElementById(imgright).style.top = imgFromTop  + "px";
 
 }
+
 
 function changeRight(clickedImageID){
 
@@ -194,6 +185,7 @@ document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
 document.getElementById("20").src="IMAGES/"+getsourceClickedImg+".jpg";
 
 }
+
 else if(group === "msa") {
   var getfirstImage = document.getElementById(10).src;
   var currentImage = basename(getfirstImage);
