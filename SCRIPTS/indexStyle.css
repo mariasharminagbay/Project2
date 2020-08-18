@@ -3,7 +3,7 @@ header,footer{
 }
 
 #showcase{
-	background:url('/IMAGES/Cover2.jpg') no-repeat center center/cover;
+	background:url('../IMAGES/Cover2.jpg') no-repeat center center/cover;
 	height:55vh;
 
 }
@@ -215,7 +215,7 @@ li a, .dropbtn {
   }
 .mission{
 	float:left;
-	width:600px;
+	width:400px;
 	height:400px;
 
 }
@@ -259,6 +259,7 @@ li a, .dropbtn {
 	margin-top: 50px;
 	display: flex;
 	height: 750px;
+
 	align-items: center;
 	text-align: top;
 	font-size: 25px;
@@ -289,24 +290,24 @@ li a, .dropbtn {
 
 	  }
 	  .grid-container {
-		margin-left: 250px;
+		
 		display: grid;
 		grid-template-columns: auto auto auto auto auto;
 		background-color: #B7CEEC;
-		padding: 10px;
+		padding: 5px;
 	  }
 	  .grid-item {
 		background-color: rgba(255, 255, 255, 0.8);
-		border: 10px solid rgba(0, 0, 0, 0.8);
+		border: 5px solid rgba(0, 0, 0, 0.8);
 		padding: 20px;
-		font-size: 30px;
+		font-size: 20px;
 		text-align: center;
 	  }
 	  /*Flippping Image*/
 	  .flip-box {	
 		background-color: transparent;
-		width: 300px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 		border: 3px solid #f1f1f1;
 		perspective: 1000px;
 	  }
@@ -341,6 +342,7 @@ li a, .dropbtn {
 		background-color: #555;
 		color: white;
 		transform: rotateY(180deg);
+		
 	  }
 	  /*Service Heading*/
 	  .serv-h{
