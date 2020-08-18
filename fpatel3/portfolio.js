@@ -1,5 +1,5 @@
 function download() {
-    var fileURL = "/fpatel3/Resume_foram.pdf"; 
+    var fileURL = "../fpatel3/Resume_foram.pdf"; 
     var fileName = "Resume_foram.pdf";
     var link = document.createElement('a');
     link.href = fileURL;
