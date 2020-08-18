@@ -341,13 +341,14 @@ li a, .dropbtn {
 	  .flip-box-back {
 		background-color: #555;
 		color: white;
+		font-size: 20px;
 		transform: rotateY(180deg);
 		
 	  }
 	  /*Service Heading*/
 	  .serv-h{
 		  
-		  margin-left:800px;
+		  margin-left: 550px;
 		  font-size: 30px;
 		  color: #0000A0;
 	  }
