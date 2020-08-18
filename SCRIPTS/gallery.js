@@ -14,10 +14,12 @@ var elementsIshara = document.getElementsByClassName("rowIshara");
 var y = document.getElementById("rowMSAID");
 var x = document.getElementById("rowForamID");
 var z = document.getElementById("rowIsharaID");
+
+var h1value = document.getElementById("h1ID");
+
 // Declare a loop variable
 var i;
 
-// Full-width images
 function one() {
 
     x.style.display = 'flex';
@@ -27,10 +29,11 @@ function one() {
     for (i = 0; i < elementsForam.length; i++) {
         elementsForam[i].style.msFlex = "50%";  // IE10
         elementsForam[i].style.flex = "50%";
+    
+        h1value.innerHTML = " Foram's hobbies are cooking delicious and healthy foods and reading books";
   }
 }
 
-// Two images side by side
 function two() {
 
     y.style.display = 'flex';
@@ -40,10 +43,11 @@ function two() {
   for (i = 0; i < elementsMSA.length; i++) {
     elementsMSA[i].style.msFlex = "50%";  // IE10
     elementsMSA[i].style.flex = "50%";
+
+    h1value.innerHTML = " Maria's hobbies are cooking and eating delicious and healthy foods";
   }
 }
 
-// Four images side by side
 function four() {
 
     z.style.display = 'flex';
@@ -54,6 +58,7 @@ function four() {
     elementsIshara[i].style.msFlex = "50%";  // IE10
     elementsIshara[i].style.flex = "50%";
     
+    h1value.innerHTML = " Ishara's hobby is gardening fruits, flowers and vegetables.";
   }
 }
 
