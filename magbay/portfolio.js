@@ -1,15 +1,5 @@
 function download() { 
-              
-    // var text = document.getElementById("text").value; 
-    var file = "/magbay/AgbayMariaSharminResume.docx"; 
+    var file = "/magbay/AgbayMariaSharminResume.pdf"; 
     document.getElementById('my_iframe').src = file;
 } 
   
-// console.log(document.getElementById("btnResume"))
-// document.getElementById("btnResume") 
-// .addEventListener("click", function() { 
-    
-   
-  
-//     download(filename, text); 
-// }, false); 
