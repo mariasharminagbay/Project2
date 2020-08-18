@@ -69,27 +69,8 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function zoomin(){
-  var myImg = document.getElementById("sky");
-  var currWidth = myImg.clientWidth;
-  if(currWidth == 500){
-      alert("Maximum zoom-in level reached.");
-  } else{
-      myImg.style.width = (currWidth + 50) + "px";
-  } 
-}
-function zoomout(){
-  var myImg = document.getElementById("sky");
-  var currWidth = myImg.clientWidth;
-  if(currWidth == 50){
-      alert("Maximum zoom-out level reached.");
-  } else{
-      myImg.style.width = (currWidth - 50) + "px";
-  }
-}
 
-
-function toggleColor(imgid) {
+function toggleLeftRight(imgid) {
   var myImg = document.getElementById(imgid);
   //alert(imgid);
   var currWidth = myImg.clientWidth;
@@ -124,50 +105,6 @@ function toggleColor(imgid) {
 }
 
 
-function getNumImages() {
-  var x = document.images.length;
-  alert(x);
-  //document.getElementById("demo").innerHTML = x;
-  var y = document.getElementById("rowMSAID").querySelectorAll("img").length;
-  alert(y);
-
-}
-
-function moveRight(imgid){
-  //1. alert(imgid);
-  var myImg = document.getElementById(imgid); //getting element of the clicked image
-  alert("left: " + myImg.offsetLeft + " - top: " + myImg.offsetTop);  //for testing
-
-  //2. get the left and top of clicked image
-  var imgFromLeft = myImg.offsetLeft; 
-  var imgFromTop = myImg.offsetTop;
-  alert("left: " + imgFromLeft);
-  alert("top: " + imgFromTop);
-  //
-
-  //1.
-  var imgright = imgid + 1;  //getting the next image
-  alert("imgid + 1 is :" + imgright);
-
-  var myImgright = document.getElementById(imgright);
-  //alert(myImgright);
-  alert("left:" + myImgright.offsetLeft + " - top: " + myImgright.offsetTop);
-
-  //2. get the position of the right image to be moved to the left
-  var imgRightToLeftLeft = myImgright.offsetLeft;
-  var imgRighttoLeftTop = myImgright.offsetTop;
-  alert("left2: " + imgRightToLeftLeft);
-  alert("top2: " + imgRighttoLeftTop);
-
-    //set the position now
-    document.getElementById(imgid).style.position = "sticky";
-    document.getElementById(imgid).style.left = imgRightToLeftLeft + "px";//myImgright.offsetLeft + "px";
-    document.getElementById(imgid).style.top = imgRighttoLeftTop + "px";//myImgright.offsetTop  + "px";
-
-    moveLeft(imgFromLeft,imgFromTop,imgright); //original left position:orignal top position: on the right image
-
-}
-
 function moveLeft(imgFromLeft, imgFromTop,imgright){
 alert("helloleft");
 
@@ -182,11 +119,95 @@ document.getElementById(imgright).style.top = imgFromTop  + "px";
 }
 
 function changeRight(clickedImageID){
-var imageClicked = document.getElementById(clickedImageID);
+
+var imageClicked = document.getElementById(clickedImageID).src;
 var toReplaceImgID = clickedImageID + 1;
 
-//set attribute
+var getBasefilename = basename(imageClicked);
+var getFutureFilenam = basename(document.getElementById(toReplaceImgID).src);
 
-
+document.getElementById(clickedImageID).src="IMAGES/"+getFutureFilenam+".jpg";
+document.getElementById(toReplaceImgID).src="IMAGES/"+getBasefilename+".jpg";
 
 }
+
+function basename(prevname) {
+  return prevname.replace(/^(.*[/\\])?/, '').replace(/(\.[^.]*)$/, '');
+}
+
+function puttoTop(group,clickedImageID){
+var imageClicked = document.getElementById(clickedImageID).src;
+
+if (group === "foram") {
+  var getfirstImage = document.getElementById(11).src;
+  var currentImage = basename(getfirstImage);
+ 
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+  
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("11").src="IMAGES/"+getsourceClickedImg+".jpg";
+
+}
+else if(group === "msa") {
+  var getfirstImage = document.getElementById(1).src;
+  var currentImage = basename(getfirstImage);
+
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("1").src="IMAGES/"+getsourceClickedImg+".jpg";
+
+}
+else if (group === "ishara"){
+  var getfirstImage = document.getElementById(21).src;
+  var currentImage = basename(getfirstImage);
+
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("21").src="IMAGES/"+getsourceClickedImg+".jpg";
+}
+else{}
+
+} 
+
+
+function basename(prevname) {
+  return prevname.replace(/^(.*[/\\])?/, '').replace(/(\.[^.]*)$/, '');
+}
+
+function puttoBottom(group,clickedImageID){
+var imageClicked = document.getElementById(clickedImageID).src;
+
+if (group === "foram") {
+  var getfirstImage = document.getElementById(20).src;
+  var currentImage = basename(getfirstImage);
+ 
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+  
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("20").src="IMAGES/"+getsourceClickedImg+".jpg";
+
+}
+else if(group === "msa") {
+  var getfirstImage = document.getElementById(10).src;
+  var currentImage = basename(getfirstImage);
+
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("10").src="IMAGES/"+getsourceClickedImg+".jpg";
+
+}
+else if (group === "ishara"){
+  var getfirstImage = document.getElementById(30).src;
+  var currentImage = basename(getfirstImage);
+
+  var getsourceClickedImg = basename(document.getElementById(clickedImageID).src);
+
+document.getElementById(clickedImageID).src="IMAGES/"+currentImage+".jpg";
+document.getElementById("30").src="IMAGES/"+getsourceClickedImg+".jpg";
+}
+else{}
+
+} 
