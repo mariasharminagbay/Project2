@@ -1,5 +1,10 @@
-function download() { 
-    var file = "/magbay/AgbayMariaSharminResume.pdf"; 
-    document.getElementById('my_iframe').src = file;
-} 
-  
+function download() {
+    var fileURL = "/magbay/AgbayMariaSharminResume.pdf"; 
+    var fileName = "AgbayMariaSharminResume.pdf";
+    var link = document.createElement('a');
+    link.href = fileURL;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
