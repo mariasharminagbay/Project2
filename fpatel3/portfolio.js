@@ -1,5 +1,10 @@
-function download() { 
-    var file = "/fpatel3/Latest_resume_with_cover_letter.docx"; 
-
-    document.getElementById('my_iframe').src = file;
-} 
+function download() {
+    var fileURL = "/fpatel3/Resume_foram.pdf"; 
+    var fileName = "Resume_foram.pdf";
+    var link = document.createElement('a');
+    link.href = fileURL;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
